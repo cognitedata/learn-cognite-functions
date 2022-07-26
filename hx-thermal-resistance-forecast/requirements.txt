@@ -1,0 +1,2 @@
+cognite-sdk-experimental >=0.86.0
+prophet>=1.1

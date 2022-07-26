@@ -1,11 +1,14 @@
 [tool.poetry]
-name = "python-basic-template"
+name = "learn-cognite-functions"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Choukha Ram <choukha.ram@cognite.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+cognite-sdk-experimental = "^0.86.0"
+python-dotenv = "^0.20.0"
+matplotlib = "^3.5.2"
 
 [tool.poetry.dev-dependencies]
 isort = "^5.10.1"
