@@ -56,8 +56,8 @@ def create_and_save_time_series_data(client, data, ts_external_id):
         dps = dps + [{"timestamp": r.name, "value": r["TR"]}]
     try:
         client.datapoints.insert(datapoints=dps, external_id=ts_external_id)
-    except:
-        pass
+    except BaseException as e:
+        print(str(e))
 
 
 def handle(client, data=None, secrets=None, function_call_info=None):
