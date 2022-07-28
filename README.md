@@ -1,15 +1,13 @@
-# Python Project
-This is a template for a basic python project.
+# Cognite Functions
 
-* Ensure that URL points to file in your repository.
-[![Code Quality Checks](https://github.com/choukha/python-basic-template/actions/workflows/code-quality.yaml/badge.svg)](https://github.com/choukha/python-basic-template/actions/workflows/code-quality.yaml)
+[![Code Quality Checks](https://github.com/cognitedata/learn-cognite-functions/actions/workflows/code-quality.yaml/badge.svg)](https://github.com/cognitedata/learn-cognite-functions/actions/workflows/code-quality.yaml)
 
 
 To get started with this repo :
 
 1. First clone the repository, example such as
 ```
-git clone git@github.com:your-user/your-repo-name.git
+git clone git@github.com:cognitedata/learn-cognite-functions.git
 ```
 2. Make sure that you've [poetry](https://python-poetry.org/) installed.
 Also change the following setting in `poetry`
@@ -20,8 +18,12 @@ Open the repo in IDE (e.g. VS code) and run the following command in the termina
 ```
 poetry install
 ```
+3. After that you're ready to run the code in notebooks folder.
 
-3. Also install pre-commit hooks
+Note : Additionally, Make sure you've created a ".env" file in the root folder of this repository, with the client secret value. ( A sample file named "save_this_as_dot_env" is available)
+
+## Additional notes for developers:
+4. Also install pre-commit hooks. ( Make sure you've [pre-commit](https://pre-commit.com/) installed prior to this command)
 ```
 pre-commit install
 ```
@@ -31,7 +33,7 @@ Note : Before committing to github, Always run below command, to check that pre-
 poetry run pre-commit run --all-files
 ``` 
 
-4. Add new libraries as needed
+5. Add new libraries as needed
 ```
 poetry add pandas numpy
 ```
