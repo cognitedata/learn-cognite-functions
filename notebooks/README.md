@@ -4,7 +4,8 @@ For the hands-on exercise, we will be looking at developing a Cognite Function t
 
 The heat exchanger that we will be looking at is the discharge cooler in the Open Industrial Dataset. You can learn more about the data set here (https://openindustrialdata.com/) but essentially it represents the first of four stages for compression of natural gas on the Valhall PH platform. The discharge cooler is used to cool down the effluent of the compressed gas coming out of the compressor. We'll monitor the thermal resistance of a heat exchanger. This is important for the maintenance and cleaning of the HE. If the thermal resistance goes down, it’s not performing at the optimal level so we need to start cleaning and/or maintenance.
 
-![Uploading pnid-screenshot.png…]()
+![pnid-screenshot](https://user-images.githubusercontent.com/29730122/183856518-775e8061-f9f1-4d8b-8717-75bb0c4b93f2.png)
+
 
 The hands-on exercise is divided into 5 parts. The first 3 parts are mandatory for the completion of the course while the last 2 are there for anyone who wants to dig deeper into advanced functionality.
 
