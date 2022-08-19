@@ -1,4 +1,4 @@
-
+# Copyright 2022 Cognite AS
 import datetime
 from datetime import timedelta
 from tools import thermal_resistance

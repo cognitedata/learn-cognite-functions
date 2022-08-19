@@ -1,3 +1,4 @@
+# Copyright 2022 Cognite AS
 from cognite.client.data_classes import TimeSeries
 from math import log
 import datetime

@@ -1,3 +1,4 @@
+# Copyright 2022 Cognite AS
 from math import log
 
 def thermal_resistance(x):

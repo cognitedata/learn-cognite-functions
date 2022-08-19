@@ -1,3 +1,4 @@
+# Copyright 2022 Cognite AS
 import time
 
 def status_check(function):
