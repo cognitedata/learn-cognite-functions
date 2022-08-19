@@ -1,15 +1,26 @@
-# Cognite Functions
+# Using Cognite Python SDK
 
-[![Code Quality Checks](https://github.com/cognitedata/learn-cognite-functions/actions/workflows/code-quality.yaml/badge.svg)](https://github.com/cognitedata/learn-cognite-functions/actions/workflows/code-quality.yaml)
+A step by step guide with practical examples and code for using Cognite Python SDK.
+https://cognite-docs.readthedocs-hosted.com/projects/cognite-sdk-python/en/latest/
 
+## Getting Started:
 
-To get started with this repo :
-
-1. First clone the repository, example such as
+1. First clone the repository using git
 ```
-git clone git@github.com:cognitedata/learn-cognite-functions.git
+git clone https://github.com/cognitedata/learn-cognite-functions.git
 ```
-2. Make sure that you've [poetry](https://python-poetry.org/) installed.
+
+2. Install the required packages by opening up the terminal on your machine and running the following command 
+
+```
+pip install cognite-sdk msal pandas
+```
+
+For more advanced users, you can also use [poetry](https://python-poetry.org/) to manage your Python virtual environment. If you would like to use this tool, please follow the steps detailed in the next section.
+
+## Additional notes for developers:
+
+2. (Advanced) Make sure that you've [poetry](https://python-poetry.org/) installed.
 Also change the following setting in `poetry`
 ```
 poetry config virtualenvs.in-project true
@@ -18,22 +29,10 @@ Open the repo in IDE (e.g. VS code) and run the following command in the termina
 ```
 poetry install
 ```
-3. After that you're ready to run the code in notebooks folder.
 
-Note : Additionally, Make sure you've created a ".env" file in the root folder of this repository, with the client secret value. ( A sample file named "save_this_as_dot_env" is available)
+Now you're ready to run the code in jupyter notebooks. ( Note : Change the "Kernel" to use the virtual environment created by poetry.)
 
-## Additional notes for developers:
-4. Also install pre-commit hooks. ( Make sure you've [pre-commit](https://pre-commit.com/) installed prior to this command)
-```
-pre-commit install
-```
-
-Note : Before committing to github, Always run below command, to check that pre-commit checks are passed.
-```
-poetry run pre-commit run --all-files
-``` 
-
-5. Add new libraries as needed
+3. Add new libraries as needed
 ```
 poetry add pandas numpy
 ```
