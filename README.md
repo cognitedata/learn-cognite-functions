@@ -1,4 +1,4 @@
-# Using Cognite Python SDK
+# Learning how to use Cognite Functions
 
 A step by step guide with practical examples and code for using Cognite Python SDK.
 https://cognite-docs.readthedocs-hosted.com/projects/cognite-sdk-python/en/latest/
