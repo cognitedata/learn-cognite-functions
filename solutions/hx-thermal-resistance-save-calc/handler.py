@@ -1,4 +1,3 @@
-# Copyright 2022 Cognite AS
 from cognite.client.data_classes import TimeSeries
 from math import log
 import datetime
@@ -22,13 +21,12 @@ def thermal_resistance(x):
 
 def create_and_save_time_series_data(client,data, your_name):
     '''Function to create the time series and save the data'''
-    asset_id = 7640884189698369 # 23-HA-9114 Asset
     
     ts_external_id = f"hx_thermal_resistance_{your_name}"
     cdf_ts = client.time_series.retrieve(external_id=ts_external_id)
     
     if cdf_ts is None:
-        ts = TimeSeries(external_id=ts_external_id,name="Thermal Resistance", asset_id = asset_id, unit = 'm2K/W')
+        ts = TimeSeries(external_id=ts_external_id,name="Thermal Resistance", unit = 'm2K/W')
         client.time_series.create(ts)
         print("Created time series")
     else:
