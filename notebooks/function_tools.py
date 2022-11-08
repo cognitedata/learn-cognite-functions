@@ -1,6 +1,7 @@
 # Copyright 2022 Cognite AS
 import time
 
+
 def status_check(function):
 
     start_time = time.time()
@@ -9,9 +10,9 @@ def status_check(function):
 
         function.update()
 
-        time_elapsed = int(time.time()-start_time)
+        time_elapsed = int(time.time() - start_time)
 
-        print(function.status + f'. Waiting for {time_elapsed} seconds', end='\r')
+        print(function.status + f". Waiting for {time_elapsed} seconds", end="\r")
 
         if function.status == "Failed":
             print("Failed to deploy function")
@@ -20,4 +21,3 @@ def status_check(function):
         time.sleep(5)
     else:
         print(f"Function is successfully deployed. Wait time: {time_elapsed} seconds.")
-        
